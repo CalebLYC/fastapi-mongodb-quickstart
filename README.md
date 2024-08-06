@@ -1,8 +1,8 @@
 # Entrance exam to EPL API
-This is the backend of the project of the application of EPL's entrance exam.
+A quickstart of a backend app using Fastapi and MongoDB.
 It's built with python by the FastAPI library for the endpoints's development, motor of the MongoDB database integration
 and another libraries.
-
+It provides a simple collection of endpoints for authentication and authorization by roles management.
 
 
 ## Getting Started

@@ -6,8 +6,8 @@ from controllers import auth_controller, role_controller, user_controller
 
 #Créer l'application avec FastAPI
 app = FastAPI(
-    title="EPL Concours API",
-    summary="Application of the backend of admission to EPL.",
+    title="Fastapi with MongoDB quickstart",
+    summary="A quickstart of a backend app using Fastapi and MongoDB.",
 )
 
 
@@ -19,4 +19,4 @@ app.include_router(role_controller.router)
 #Endpoint racine
 @app.get("/")
 async def root():
-    return {"message": "EPL Concours API!"}
+    return {"message": "Fastapi with MongoDB database quickstart!"}
