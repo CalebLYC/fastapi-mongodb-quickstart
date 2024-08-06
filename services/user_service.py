@@ -7,6 +7,7 @@ from dependencies.db_collections import DatabaseCollection
 from models.user import CreateUserModel, UpdateUserModel, UserCollectionModel, UserModel
 from providers.auth_provider import AuthProvider
 from services.token_service import TokenService
+from config.database import db
 
 
 class UserService:
@@ -18,7 +19,7 @@ class UserService:
         return cls._instance
     
 
-    _user_collection = DatabaseCollection().user_collection
+    _user_collection = DatabaseCollection(db = db).user_collection
 
 
     #Obtenir la liste de tous les utilisateurs

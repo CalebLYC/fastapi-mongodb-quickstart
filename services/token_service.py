@@ -1,8 +1,10 @@
 from typing import Self
 from bson import ObjectId
 from fastapi import HTTPException
+
 from models.token import AccessTokenModel
 from dependencies.db_collections import DatabaseCollection
+from config.database import db
 
 
 class TokenService:
@@ -14,7 +16,7 @@ class TokenService:
         return cls._instance
     
 
-    _token_collection = DatabaseCollection.token_collection
+    _token_collection = DatabaseCollection(db = db).token_collection
 
 
     #Ajouter un document de token dans la base de données
