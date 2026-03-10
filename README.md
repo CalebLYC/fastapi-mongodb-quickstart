@@ -1,4 +1,4 @@
-# Entrance exam to EPL API
+# FastAPI Mongodb Quickstart
 A quickstart of a backend app using Fastapi and MongoDB.
 It's built with python by the FastAPI library for the endpoints's development, motor of the MongoDB database integration
 and another libraries.
